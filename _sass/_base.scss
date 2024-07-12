@@ -27,7 +27,10 @@ table {
   td,
   th {
     font-size: 1rem;
+<<<<<<< HEAD
     padding: 1px 1rem 1px 0;
+=======
+>>>>>>> c8e91b7a (Initial commit)
   }
 
   th {
@@ -72,10 +75,14 @@ blockquote {
     border-color: var(--global-tip-block);
     background-color: var(--global-tip-block-bg);
 
+<<<<<<< HEAD
     em,
     li,
     p,
     strong {
+=======
+    p {
+>>>>>>> c8e91b7a (Initial commit)
       color: var(--global-tip-block-text);
     }
 
@@ -93,10 +100,14 @@ blockquote {
     border-color: var(--global-warning-block);
     background-color: var(--global-warning-block-bg);
 
+<<<<<<< HEAD
     em,
     li,
     p,
     strong {
+=======
+    p {
+>>>>>>> c8e91b7a (Initial commit)
       color: var(--global-warning-block-text);
     }
 
@@ -114,10 +125,14 @@ blockquote {
     border-color: var(--global-danger-block);
     background-color: var(--global-danger-block-bg);
 
+<<<<<<< HEAD
     em,
     li,
     p,
     strong {
+=======
+    p {
+>>>>>>> c8e91b7a (Initial commit)
       color: var(--global-danger-block-text);
     }
 
@@ -311,6 +326,7 @@ ul.task-list input[type="checkbox"] {
     font-size: 1.7rem;
 
     a {
+<<<<<<< HEAD
       img {
         width: 1.7rem;
         height: 1.7rem;
@@ -329,6 +345,8 @@ ul.task-list input[type="checkbox"] {
         }
       }
 
+=======
+>>>>>>> c8e91b7a (Initial commit)
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
@@ -404,6 +422,7 @@ ul.task-list input[type="checkbox"] {
     font-size: 4rem;
 
     a {
+<<<<<<< HEAD
       img {
         width: 3.2rem;
         height: 3.2rem;
@@ -421,14 +440,19 @@ ul.task-list input[type="checkbox"] {
         }
       }
 
+=======
+>>>>>>> c8e91b7a (Initial commit)
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
       }
 
       &:hover {
+<<<<<<< HEAD
         text-decoration: none;
 
+=======
+>>>>>>> c8e91b7a (Initial commit)
         i::before {
           color: var(--global-theme-color);
         }
@@ -626,7 +650,10 @@ footer.sticky-bottom {
   .page-item {
     .page-link {
       color: var(--global-text-color);
+<<<<<<< HEAD
       padding: 0.75rem 1.15rem;
+=======
+>>>>>>> c8e91b7a (Initial commit)
 
       &:hover {
         color: $black-color;

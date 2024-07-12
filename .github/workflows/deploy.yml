@@ -71,6 +71,7 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+<<<<<<< HEAD
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
@@ -81,6 +82,13 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
+=======
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2.2"
+          bundler-cache: true
+>>>>>>> c8e91b7a (Initial commit)
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -90,8 +98,12 @@ jobs:
           value: ${{ github.repository }}
       - name: Install and Build 🔧
         run: |
+<<<<<<< HEAD
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
+=======
+          pip3 install --upgrade jupyter
+>>>>>>> c8e91b7a (Initial commit)
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹

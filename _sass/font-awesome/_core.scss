@@ -2,6 +2,7 @@
 // -------------------------
 
 .#{$fa-css-prefix} {
+<<<<<<< HEAD
   font-family: var(--#{$fa-css-prefix}-style-family, '#{$fa-style-family}');
   font-weight: var(--#{$fa-css-prefix}-style, #{$fa-style});
 }
@@ -13,6 +14,21 @@
 .#{$fa-css-prefix}-regular,
 .#{$fa-css-prefix}-brands,
 .#{$fa-css-prefix} {
+=======
+  font-family: var(--#{$fa-css-prefix}-style-family, "#{$fa-style-family}");
+  font-weight: var(--#{$fa-css-prefix}-style, #{$fa-style});
+}
+
+.#{$fa-css-prefix},
+.#{$fa-css-prefix}-classic,
+.#{$fa-css-prefix}-sharp,
+.fas,
+.#{$fa-css-prefix}-solid,
+.far,
+.#{$fa-css-prefix}-regular,
+.fab,
+.#{$fa-css-prefix}-brands {
+>>>>>>> c8e91b7a (Initial commit)
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: var(--#{$fa-css-prefix}-display, #{$fa-display});
@@ -22,6 +38,7 @@
   text-rendering: auto;
 }
 
+<<<<<<< HEAD
 .fas::before,
 .far::before,
 .fab::before,
@@ -42,6 +59,19 @@
 .#{$fa-css-prefix}-brands,
 .fab {
   font-family: 'Font Awesome 6 Brands';
+=======
+.fas,
+.#{$fa-css-prefix}-classic,
+.#{$fa-css-prefix}-solid,
+.far,
+.#{$fa-css-prefix}-regular {
+  font-family: "Font Awesome 6 Free";
+}
+
+.fab,
+.#{$fa-css-prefix}-brands {
+  font-family: "Font Awesome 6 Brands";
+>>>>>>> c8e91b7a (Initial commit)
 }
 
 %fa-icon {

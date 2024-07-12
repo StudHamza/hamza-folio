@@ -25,7 +25,7 @@ layout: default
             {% assign profile_image_class = 'img-fluid z-depth-1
       rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
@@ -41,7 +41,15 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
+<<<<<<< HEAD
     {% if page.announcements and page.announcements.enabled %}
+=======
+<<<<<<< HEAD
+    {% if page.news and site.announcements and site.announcements.enabled %}
+=======
+    {% if page.news and site.announcements.enabled %}
+>>>>>>> c8e91b7a (Initial commit)
+>>>>>>> 6b9df711 (Initial commit)
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
@@ -49,7 +57,15 @@ layout: default
     {% endif %}
 
     <!-- Latest posts -->
+<<<<<<< HEAD
     {% if page.latest_posts and page.latest_posts.enabled %}
+=======
+<<<<<<< HEAD
+    {% if site.latest_posts and site.latest_posts.enabled %}
+=======
+    {% if site.latest_posts.enabled %}
+>>>>>>> c8e91b7a (Initial commit)
+>>>>>>> 6b9df711 (Initial commit)
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
@@ -73,8 +89,13 @@ layout: default
       </div>
     {% endif %}
 
+<<<<<<< HEAD
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
+=======
+    {% if site.newsletter.enabled and site.footer_fixed %}
+      {% include scripts/newsletter.liquid center=true %}
+>>>>>>> c8e91b7a (Initial commit)
     {% endif %}
   </article>
 </div>

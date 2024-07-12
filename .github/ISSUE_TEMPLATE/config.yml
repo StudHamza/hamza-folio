@@ -4,5 +4,9 @@ contact_links:
     url: https://github.com/alshedivat/al-folio/discussions/categories/q-a
     about: Ask and answer al-folio related questions.
   - name: 📖 Read the documentation
+<<<<<<< HEAD
     url: https://github.com/alshedivat/al-folio/blob/main/README.md
+=======
+    url: https://github.com/alshedivat/al-folio/blob/master/README.md
+>>>>>>> c8e91b7a (Initial commit)
     about: Please consult the documentation before opening any issues!
