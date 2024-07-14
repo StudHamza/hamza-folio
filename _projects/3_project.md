@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Treasure Hunt Website
+description: A fully fledged website written in python django, i containes a QR code system to operate a treasure hunt game. Hosted on Azure
+img: assets/img/zfetch.png
+redirect: https://treasure-hunt-irl.azurewebsites.net/
 importance: 3
-category: work
+category: personal
 ---
 
 Every project has a beautiful feature showcase page.
