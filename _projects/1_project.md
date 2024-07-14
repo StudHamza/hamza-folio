@@ -1,16 +1,14 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Money printing machine
+description: Python script that uses the reddit API to fetch hot stories for r/stories, then uses google cloud text to speech to create a subtitle.srt file, which is then added to a random satsfing video.  
+img: assets/img/reddit_yt.png
 importance: 1
-category: work
+category: personal
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Tiktok motization program is a gold rush if used right. One of the most popular videos on tiktok and other short form social media 
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
