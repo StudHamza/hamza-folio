@@ -27,3 +27,10 @@ You can watch a 2 min video explaining how this product works right here, right 
 Also Check out repository on github
 <a href='https://github.com/Farreeda/WatsonX-24'>DocuBot</a>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/IBM_cert.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
