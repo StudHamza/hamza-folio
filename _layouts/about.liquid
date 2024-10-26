@@ -42,6 +42,7 @@ layout: default
 
     <!-- News -->
 <<<<<<< HEAD
+<<<<<<< HEAD
     {% if page.announcements and page.announcements.enabled %}
 =======
 <<<<<<< HEAD
@@ -50,6 +51,9 @@ layout: default
     {% if page.news and site.announcements.enabled %}
 >>>>>>> c8e91b7a (Initial commit)
 >>>>>>> 6b9df711 (Initial commit)
+=======
+    {% if page.news and site.announcements.enabled %}
+>>>>>>> 87359824 (October 10 Update: VCT Hack added)
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
@@ -57,6 +61,7 @@ layout: default
     {% endif %}
 
     <!-- Latest posts -->
+<<<<<<< HEAD
 <<<<<<< HEAD
     {% if page.latest_posts and page.latest_posts.enabled %}
 =======
@@ -66,6 +71,9 @@ layout: default
     {% if site.latest_posts.enabled %}
 >>>>>>> c8e91b7a (Initial commit)
 >>>>>>> 6b9df711 (Initial commit)
+=======
+    {% if site.latest_posts.enabled %}
+>>>>>>> 87359824 (October 10 Update: VCT Hack added)
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
@@ -89,13 +97,8 @@ layout: default
       </div>
     {% endif %}
 
-<<<<<<< HEAD
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-=======
     {% if site.newsletter.enabled and site.footer_fixed %}
       {% include scripts/newsletter.liquid center=true %}
->>>>>>> c8e91b7a (Initial commit)
     {% endif %}
   </article>
 </div>

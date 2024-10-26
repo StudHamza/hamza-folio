@@ -42,6 +42,7 @@ module ExternalPosts
     end
 
     def create_document(site, source_name, url, content)
+<<<<<<< HEAD
       # check if title is composed only of whitespace or foreign characters
       if content[:title].gsub(/[^\w]/, '').strip.empty?
         # use the source name and last url segment as fallback
@@ -52,6 +53,9 @@ module ExternalPosts
         slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}" if slug.empty?
       end
 
+=======
+      slug = content[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+>>>>>>> 87359824 (October 10 Update: VCT Hack added)
       path = site.in_source_dir("_posts/#{slug}.md")
       doc = Jekyll::Document.new(
         path, { :site => site, :collection => site.collections['posts'] }
@@ -90,6 +94,7 @@ module ExternalPosts
       html = HTTParty.get(url).body
       parsed_html = Nokogiri::HTML(html)
 
+<<<<<<< HEAD
       title = parsed_html.at('head title')&.text.strip || ''
       description = parsed_html.at('head meta[name="description"]')&.attr('content')
       description ||= parsed_html.at('head meta[name="og:description"]')&.attr('content')
@@ -97,6 +102,11 @@ module ExternalPosts
 
       body_content = parsed_html.search('p').map { |e| e.text }
       body_content = body_content.join() || ''
+=======
+      title = parsed_html.at('head title')&.text || ''
+      description = parsed_html.at('head meta[name="description"]')&.attr('content') || ''
+      body_content = parsed_html.at('body')&.inner_html || ''
+>>>>>>> 87359824 (October 10 Update: VCT Hack added)
 
       {
         title: title,

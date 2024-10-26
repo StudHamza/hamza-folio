@@ -33,6 +33,7 @@
       <source
         class="responsive-img-srcset"
 <<<<<<< HEAD
+<<<<<<< HEAD
         {% if ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff' %}
           srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
           type="image/webp"
@@ -50,6 +51,8 @@
     <img
       src="{% if include.url %}{{ include.url }}{% elsif include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
 =======
+=======
+>>>>>>> 87359824 (October 10 Update: VCT Hack added)
         srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp {{i}}w,{% endfor %}"
         {% if include.sizes %}
           sizes="{{include.sizes}}"
@@ -61,7 +64,6 @@
     {% endif %}
     <img
       src="{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
->>>>>>> c8e91b7a (Initial commit)
       {% if include.class %}
         class="{{ include.class }}"
       {% endif %}
