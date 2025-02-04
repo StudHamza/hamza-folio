@@ -1,8 +1,8 @@
 ---
 layout: page
 title: USRP DVB Project
-description: another without an image
-img:
+description: DVB S2 Simulation and Hardware In Loop Testing
+img: assets/img/USRP/cover.png
 importance: 3
 category: communication
 ---
@@ -35,7 +35,7 @@ dominant LOS component.
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/USRP/channel.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/USRP/channels.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
