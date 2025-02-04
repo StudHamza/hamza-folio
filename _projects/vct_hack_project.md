@@ -4,7 +4,7 @@ title: Los valienties
 description: LLM-powered digital assistant with Amazon Bedrock to build teams and answer questions about VALORANT Esports players
 img: assets/img/VCT_Hack/logo.png
 importance: 1
-category: fun
+category: software
 ---
 
 ### Hackathon Project Summary: Data Analysis and AWS Architecture

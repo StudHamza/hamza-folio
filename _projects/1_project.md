@@ -4,7 +4,7 @@ title: Money printing machine
 description: Python script that uses the reddit API to fetch hot stories for r/stories, then uses google cloud text to speech to create a subtitle.srt file, which is then added to a random satsfing video.  
 img: assets/img/reddit_yt.png
 importance: 1
-category: personal
+category: software
 related_publications: true
 ---
 

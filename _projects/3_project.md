@@ -4,7 +4,7 @@ title: Treasure Hunt Website
 description: A fully fledged website written in python django, i containes a QR code system to operate a treasure hunt game. Hosted on Azure
 img: assets/img/zfetch.png
 importance: 3
-category: personal
+category: software
 ---
 
 Using Django, Mysql and Azure I created a treasure hunt game with built in QR code scanning. <a href='redirect: https://treasure-hunt-irl.azurewebsites.net/'>Zfetch</a> Sadly I lost this project, since it was hosted on Azure app services free plan that was changed in May 2024.
