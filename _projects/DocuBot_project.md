@@ -4,7 +4,7 @@ title: DocuBot
 description: 2024 IBM watsonx.ai Hackathon solution. A RAG generative chat bot to answer queries about provided unstructured pdf documents.
 img: assets/img/docubot.png
 importance: 2
-category: fun
+category: software
 ---
 
 Document archiving is a pretty big deal to business now a days, find a needle in a haystack haven't been easier since __DocuBot__. DocuBot is a generative AI with API endpoints the powerfull watsonx.ai product, our bot can process and type of document data, extract relevant information and answer any user query with appropriate response.

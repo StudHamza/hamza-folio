@@ -4,7 +4,7 @@ title: Anki Deck Automation
 description: Using beautiful soup, gTTS (Google Text-to-Speech) and genanki python libraries, I created a script that scrapes a japanese website to create a anki deck for the book みんなの日本語.
 img: assets/img/anki_deck_jap.png
 importance: 2
-category: personal
+category: software
 giscus_comments: false
 ---
 
