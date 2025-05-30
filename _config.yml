@@ -195,10 +195,6 @@ collections:
     defaults:
       layout: post
     output: true
-<<<<<<< HEAD
-  projects:
-    output: true
-=======
     permalink: /news/:path/
   projects:
     output: true
@@ -213,7 +209,6 @@ latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
->>>>>>> 87359824 (October 10 Update: VCT Hack added)
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
