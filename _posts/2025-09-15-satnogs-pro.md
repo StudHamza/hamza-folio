@@ -49,7 +49,7 @@ All components were mounted using:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/satnogs/5.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/satnogs/12.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -77,7 +77,7 @@ The Raspberry Pi and the new PDU are securely mounted on a [DeskPi DP-0039 Brack
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/satnogs/11.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/satnogs/11.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/satnogs/9.png" class="img-fluid rounded z-depth-1" %}
