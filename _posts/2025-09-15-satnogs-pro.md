@@ -134,7 +134,7 @@ For more information about the [EP-0249 PDU](https://wiki.52pi.com/index.php?tit
     </div>  
 </div>  
 
-Finally assemble the LCD Display and place it on top of the mount, wire everything together and your station is should be up and running. If not checkout the trouble shooting page of the SatNOGS Wiki, [https://wiki.satnogs.org/Troubleshooting](https://wiki.satnogs.org/Troubleshooting).
+Finally assemble the LCD Display and place it on top of the mount, wire everything together and your station should be up and running. If not checkout the trouble shooting page of the SatNOGS Wiki, [https://wiki.satnogs.org/Troubleshooting](https://wiki.satnogs.org/Troubleshooting).
 
 <div class="row">  
         <div class="col-sm mt-3 mt-md-0">  
