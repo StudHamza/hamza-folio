@@ -121,7 +121,7 @@ For more information about the [EP-0249 PDU](https://wiki.52pi.com/index.php?tit
 <div class="row">  
     <div class="row">  
         <div class="col-sm mt-3 mt-md-0">  
-        {% include figure.liquid loading="eager" path="assets/img/satnogs/18.jpg" class="img-fluid rounded z-depth-1" alt="Pi RackMount" %}  
+        {% include figure.liquid loading="eager" path="assets/img/satnogs/18.png" class="img-fluid rounded z-depth-1" alt="Pi RackMount" %}  
         </div>  
         <div class="col-sm mt-3 mt-md-0">  
         {% include figure.liquid loading="eager" path="assets/img/satnogs/19.png" class="img-fluid rounded z-depth-1" alt="Pi Rackmount 2" %}  
@@ -129,7 +129,7 @@ For more information about the [EP-0249 PDU](https://wiki.52pi.com/index.php?tit
     </div>  
         <div class="row">  
         <div class="col-sm mt-3 mt-md-0">  
-        {% include figure.liquid loading="eager" path="assets/img/satnogs/20.jpg" class="img-fluid rounded z-depth-1" alt="Pi RackMount" %}  
+        {% include figure.liquid loading="eager" path="assets/img/satnogs/20.png" class="img-fluid rounded z-depth-1" alt="Pi RackMount" %}  
         </div> 
     </div>  
 </div>  
@@ -147,7 +147,7 @@ Finally assemble the LCD Display and place it on top of the mount, wire everythi
 
 <div class="row">  
         <div class="col-sm mt-3 mt-md-0">  
-        {% include figure.liquid loading="eager" path="assets/img/satnogs/13.jpg" class="img-fluid rounded z-depth-1" alt="Wiring" %}  
+        {% include figure.liquid loading="eager" path="assets/img/satnogs/13.png" class="img-fluid rounded z-depth-1" alt="Wiring" %}  
 </div>  
 </div>  
 
