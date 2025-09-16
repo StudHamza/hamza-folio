@@ -49,7 +49,7 @@ All components were mounted using:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/satnogs/12.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/satnogs/13.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
