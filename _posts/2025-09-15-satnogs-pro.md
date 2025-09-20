@@ -11,21 +11,6 @@ compare: true
 slider: true  
 ---
 
-## Bill of Materials  
-
-| Component | Model / Link | Purpose | Price (USD) |
-|-----------|--------------|---------|-------------|
-| Antenna | [Bingfu Omni, VHF (136-174 MHz) & UHF (400-470 MHz)](https://www.amazon.com/Bingfu-136-174MHz-400-470MHz-Handheld-Magnetic/dp/B07X2LK2NL) | Receiving satellite signals; suitable for non-rotary builds | 10.00 |
-| Low Noise Amplifier (LNA) | [NooElec Inline LNA v2](https://www.nooelec.com/store/lana.html) | Signal amplification | 35.00 |
-| SDR Receiver | [NooElec NESDR SMArt v5](https://www.nooelec.com/store/nesdr-smart-sdr.html) | RF signal reception | 37.95 |
-| Controller | Raspberry Pi 5 (8 GB) | Running SatNOGs client software | 93.80 |
-| Power Distribution Unit (PDU) 1 | [DeskPi DC PDU Lite](https://deskpi.com/products/deskpi-dc-pdu-lite-7-ch-0-5u-for-deskpi-rackmate-t1) | Original PDU for 12 V / mixed loads | 50.00 |
-| Power Distribution Unit (PDU) 2 | [52Pi 4-Channel 5 V PDU](https://52pi.com/collections/new-arrivals/products/52pi-4-usb-channel-5v-power-supply-module-for-raspberry-pi-pico-0-91-inch-oled-screen-compatible-with-1u-rack-mounting) | Stable 5 V power for Raspberry Pi and peripherals | 17.50 |
-| Rack Mount | [DeskPi RackMate](https://deskpi.com/products/deskpi-rackmate-t0-black-version-rackmount-10-inch-4u-server-cabinet-for-network-servers-audio-and-video-equipment) | Enclosure for station hardware | 80.00 |
-| Bracket | [DeskPi DP-0039 Bracket](https://deskpi.com/products/deskpi-rackmate-10-inch-1u-rack-mount-with-2-pcie-nvme-boards-for-raspberry-pi-5-supports-m-2-nvme-ssds/) | Mounts Raspberry Pi + new PDU | 40.00 |
-| Display | [GeeekPi 10.1-inch LCD Screen](https://www.amazon.com/dp/B0CPLYD5GD?ref_=cm_sw_r_cp_ud_dp_2EGBYHWQDMQYEVC9GPZV) | Display screen for desktop environment | 69.99 |
-
-
 ## Project Overview  
 
 **Project**: Development of a SatNOGs fixed ground station with two Power Distribution Units (PDUs) to support a future rotator system.  
@@ -98,7 +83,21 @@ The software stack follows the SatNOGs deployment model:
 
 ---
 
-## Hardware  
+## Hardware 
+
+### Bill of Materials  
+
+| Component | Model / Link | Purpose | Price (USD) |
+|-----------|--------------|---------|-------------|
+| Antenna | [Bingfu Omni, VHF (136-174 MHz) & UHF (400-470 MHz)](https://www.amazon.com/Bingfu-136-174MHz-400-470MHz-Handheld-Magnetic/dp/B07X2LK2NL) | Receiving satellite signals; suitable for non-rotary builds | 10.00 |
+| Low Noise Amplifier (LNA) | [NooElec Inline LNA v2](https://www.nooelec.com/store/lana.html) | Signal amplification | 35.00 |
+| SDR Receiver | [NooElec NESDR SMArt v5](https://www.nooelec.com/store/nesdr-smart-sdr.html) | RF signal reception | 37.95 |
+| Controller | Raspberry Pi 5 (8 GB) | Running SatNOGs client software | 93.80 |
+| Power Distribution Unit (PDU) 1 | [DeskPi DC PDU Lite](https://deskpi.com/products/deskpi-dc-pdu-lite-7-ch-0-5u-for-deskpi-rackmate-t1) | Original PDU for 12 V / mixed loads | 50.00 |
+| Power Distribution Unit (PDU) 2 | [52Pi 4-Channel 5 V PDU](https://52pi.com/collections/new-arrivals/products/52pi-4-usb-channel-5v-power-supply-module-for-raspberry-pi-pico-0-91-inch-oled-screen-compatible-with-1u-rack-mounting) | Stable 5 V power for Raspberry Pi and peripherals | 17.50 |
+| Rack Mount | [DeskPi RackMate](https://deskpi.com/products/deskpi-rackmate-t0-black-version-rackmount-10-inch-4u-server-cabinet-for-network-servers-audio-and-video-equipment) | Enclosure for station hardware | 80.00 |
+| Bracket | [DeskPi DP-0039 Bracket](https://deskpi.com/products/deskpi-rackmate-10-inch-1u-rack-mount-with-2-pcie-nvme-boards-for-raspberry-pi-5-supports-m-2-nvme-ssds/) | Mounts Raspberry Pi + new PDU | 40.00 |
+| Display | [GeeekPi 10.1-inch LCD Screen](https://www.amazon.com/dp/B0CPLYD5GD?ref_=cm_sw_r_cp_ud_dp_2EGBYHWQDMQYEVC9GPZV) | Display screen for desktop environment | 69.99 |
 
 The **final hardware build** integrates dual PDUs to solve earlier power issues:  
 
