@@ -4,7 +4,7 @@ title: Building a SatNOGs Ground Station in Egypt
 date: 2025-08-25 1:00:00  
 description: A summary of my internship project with Outlyer.space to develop a non-rotary ground station in Egypt.  
 tags: satnogs, ground-station, omni-antenna  
-categories: outlyer.space  
+categories: outlyer.space
 featured: false  
 images:  
 compare: true  

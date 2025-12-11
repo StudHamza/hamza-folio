@@ -3,7 +3,7 @@ layout: page
 title: Patch Atenna Design
 description: A Hexa-Band Quad-Circular-Polarization Slotted Patch Antenna for 5G, GPS, WLAN, LTE, and Radio Navigation Applications
 img: assets/img/EM2/cover.png
-importance: 1
+importance: 3
 category: communication
 ---
 
