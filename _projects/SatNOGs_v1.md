@@ -16,7 +16,7 @@ This document covers the technical aspects of a complete SatNOGs ground station 
         {% include figure.liquid loading="eager" path="assets/img/satnogs/8.jpg" title="Complete Ground Station Assembly" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-5 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/satnogs/11.png" title="Dual PDU Configuration" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/satnogs/11.jpg" title="Dual PDU Configuration" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-5 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/satnogs/9.png" title="Rack Integration" class="img-fluid rounded z-depth-1" %}
@@ -59,7 +59,7 @@ The architecture supports future expansion to rotator-based directional tracking
 The omnidirectional antenna provides hemispherical coverage with typical 3dBi gain across the VHF/UHF amateur satellite bands. The general-purpose LNA maintains noise figure below 1dB with sufficient gain to overcome SDR receiver noise.
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/satnogs/4.png" title="RF Frontend" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/satnogs/4.jpg" title="RF Frontend" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -67,7 +67,7 @@ The omnidirectional antenna provides hemispherical coverage with typical 3dBi ga
 Initial deployment revealed voltage regulation issues with the [DeskPi DC PDU Lite](https://deskpi.com/products/deskpi-dc-pdu-lite-7-ch-0-5u-for-deskpi-rackmate-t1), which exhibits approximately 0.4V drop across output channels due to series protection diodes in each channel. This drop proved incompatible with Raspberry Pi 5 power requirements, causing boot failures despite enough current capacity. Voltage measurements across PDU outputs confirmed the regulation issue extended beyond simple current limitation.
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/satnogs/11.png" title="Power Distribution" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/satnogs/11.jpg" title="Power Distribution" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/satnogs/20.png" title="PC and PDU Mount" class="img-fluid rounded z-depth-1" %}
@@ -87,10 +87,10 @@ Initially downloaded a desktopless raspberry pi image, however for more friendly
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 col-md-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/satnogs/16.jpg" title="Raspberry Pi Image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/satnogs/16.png" title="Raspberry Pi Image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 col-md-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/satnogs/1.png" title="Raspberry Pi Image Config" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/satnogs/1.jpg" title="Raspberry Pi Image Config" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="row justify-content-sm-center">
