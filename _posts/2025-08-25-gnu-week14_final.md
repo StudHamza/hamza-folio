@@ -1,6 +1,6 @@
 ---
 layout: post
-title: End of My GSoC journey 
+title: End of My GSoC journey GNU Radio FM Receiver
 date: 2025-08-25 1:00:00
 description: Final report summing up my 14 week GSOC journey with GNU Radio organization.
 tags: gnuradio
