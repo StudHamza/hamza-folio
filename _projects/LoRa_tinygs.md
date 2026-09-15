@@ -27,7 +27,7 @@ for packet in decoder.decode_file("recording.wav"):
 The decoder was built for satellite downlinks, where signals are weak and Doppler-shifted. Synchronization follows the low-complexity 3-stage algorithm of Xhonneux et al. (2021), which estimates the Carrier Frequency Offset (CFO) and Symbol Timing Offset (STO) by exploiting the known chirp structure of the LoRa preamble.
 
 <figure id="fig-packet">
-{% include figure.liquid path="assets/img/lora/lora_packet.png" class="img-fluid rounded z-depth-1" zoomable=true caption="A real LoRa packet received from the Polytech Universe-3 (PU-3) satellite (SF8, 62.5 kHz bandwidth). The preamble, sync word, SFD, header, payload, and CRC regions are all visible." %}
+{% include figure.liquid path="assets/img/lora/lora_packet.png" class="img-fluid rounded z-depth-1" zoomable=true caption="A real LoRa packet received from the Polytech Universe-3 (PU-3) satellite (SF8, 62.5 kHz bandwidth). The preamble, sync word, SFD, header, payload, and CRC regions are all visible. Recording courtesy of IE6ISP." %}
 </figure>
 
 Key capabilities:
@@ -52,18 +52,6 @@ Packets used for round-trip testing are produced by a [`gr-lora_sdr`](https://gi
 <figure id="fig-tx">
 {% include figure.liquid path="assets/img/lora/lora_TX.png" class="img-fluid rounded z-depth-1" zoomable=true caption="The gr-lora_sdr TX flowgraph opened in GNU Radio Companion — SF10, BW 125 kHz, 250 kHz sample rate." %}
 </figure>
-
-The generated flowgraph wires the blocks together as follows:
-
-```python
-self.connect((self.lora_sdr_whitening_0, 0),     (self.lora_sdr_header_0, 0))
-self.connect((self.lora_sdr_header_0, 0),        (self.lora_sdr_add_crc_0, 0))
-self.connect((self.lora_sdr_add_crc_0, 0),       (self.lora_sdr_hamming_enc_0, 0))
-self.connect((self.lora_sdr_hamming_enc_0, 0),   (self.lora_sdr_interleaver_0, 0))
-self.connect((self.lora_sdr_interleaver_0, 0),   (self.lora_sdr_gray_demap_0, 0))
-self.connect((self.lora_sdr_gray_demap_0, 0),    (self.lora_sdr_modulate_0, 0))
-self.connect((self.lora_sdr_modulate_0, 0),      (self.blocks_file_sink_0, 0))
-```
 
 ## TinyGS — the Ground Station
 
