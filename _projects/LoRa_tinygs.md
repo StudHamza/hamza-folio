@@ -13,7 +13,7 @@ A complete software LoRa ground station built during Google Summer of Code 2026 
 
 ## SoftLoRa — the LoRa Python Receiver
 
-[SoftLoRa](https://gitlab.com/librecube/lib/python-softlora) is a pure-Python implementation of the LoRa physical layer. Point it at an IQ recording or a live SDR stream and it finds the packets, corrects the frequency and timing errors introduced by the radio link, and returns the payload. It depends only on `numpy` and `scipy`.
+[SoftLoRa](https://gitlab.com/librecube/lib/python-softlora) is a pure-Python implementation of the LoRa physical layer, including. It depends only on `numpy` and `scipy`.
 
 ```python
 from softlora import LoRaDecoder
@@ -36,6 +36,34 @@ Key capabilities:
 - **Spreading factors 7–12** — configurable bandwidth, sample rate, and center frequency.
 - **Packet metadata** — each `Packet` exposes the payload bytes, UTF-8 text, CRC validity, and an SNR estimate, so you can filter for `crc_valid` packets only.
 - **Chase decoding** — rescues weak packets by retrying marginal symbol decisions.
+
+### Performance — AWGN SNR Sweep
+
+The receiver is validated with an end-to-end AWGN Monte Carlo testbench: a clean LoRa packet is generated with the `gr-lora_sdr` GNU Radio TX chain, then the *same* noisy draws are decoded, so only the sync + decode path is measured. Packet-error-rate curves sweep spreading factors 7 through 12.
+
+<figure id="fig-sweep">
+{% include figure.liquid path="assets/img/lora/awgn_sweep_sf7-12.png" class="img-fluid rounded z-depth-1" zoomable=true caption="PER vs SNR waterfall for SF7–12 (BW 125 kHz, CR 4/5, CRC on). Each spreading-factor step adds roughly 4 dB of processing gain." %}
+</figure>
+
+### Generating Packets with GNU Radio
+
+Packets used for round-trip testing are produced by a [`gr-lora_sdr`](https://github.com/tapparelj/gr-lora_sdr) **TX** flowgraph, [`lora_TX.grc`](https://gitlab.com/librecube/lib/python-softlora/-/blob/main/gnuradio/lora_TX.grc). A message strobe pushes a payload through the LoRa transmit chain and writes the resulting complex IQ to a `.bin` file.
+
+<figure id="fig-tx">
+{% include figure.liquid path="assets/img/lora/lora_TX.png" class="img-fluid rounded z-depth-1" zoomable=true caption="The gr-lora_sdr TX flowgraph opened in GNU Radio Companion — SF10, BW 125 kHz, 250 kHz sample rate." %}
+</figure>
+
+The generated flowgraph wires the blocks together as follows:
+
+```python
+self.connect((self.lora_sdr_whitening_0, 0),     (self.lora_sdr_header_0, 0))
+self.connect((self.lora_sdr_header_0, 0),        (self.lora_sdr_add_crc_0, 0))
+self.connect((self.lora_sdr_add_crc_0, 0),       (self.lora_sdr_hamming_enc_0, 0))
+self.connect((self.lora_sdr_hamming_enc_0, 0),   (self.lora_sdr_interleaver_0, 0))
+self.connect((self.lora_sdr_interleaver_0, 0),   (self.lora_sdr_gray_demap_0, 0))
+self.connect((self.lora_sdr_gray_demap_0, 0),    (self.lora_sdr_modulate_0, 0))
+self.connect((self.lora_sdr_modulate_0, 0),      (self.blocks_file_sink_0, 0))
+```
 
 ## TinyGS — the Ground Station
 
